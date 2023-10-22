@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq.Expressions;
 
 namespace Task1
 {
@@ -11,8 +10,6 @@ namespace Task1
         /// <param name="numbers">Numbers to sort.</param>
         public static void Sort(int[] numbers)
         {
-            int temp;
-
             if (numbers == null) 
                 throw new ArgumentNullException(nameof(numbers));
 
@@ -22,9 +19,7 @@ namespace Task1
                 {
                     if (numbers[i] > numbers[j])
                     {
-                        temp = numbers[i];
-                        numbers[i] = numbers[j];
-                        numbers[j] = temp;
+                        (numbers[i], numbers[j]) = (numbers[j], numbers[i]);
                     }
                 }
             }
