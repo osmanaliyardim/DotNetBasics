@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FizzBuzz\FizzBuzz.UI.csproj" />
+    <ProjectReference Include="..\FizzBuzz.UI\FizzBuzz.UI.csproj" />
   </ItemGroup>
 
 </Project>

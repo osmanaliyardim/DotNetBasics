@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\StringCalculatorUI\StringCalculator.UI.csproj" />
+    <ProjectReference Include="..\StringCalculator.UI\StringCalculator.UI.csproj" />
   </ItemGroup>
 
 </Project>
