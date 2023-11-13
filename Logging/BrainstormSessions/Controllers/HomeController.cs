@@ -24,6 +24,24 @@ namespace BrainstormSessions.Controllers
         {
             _sessionRepository = sessionRepository;
             _logger = logger;
+
+            //_logger = Log.Logger = new LoggerConfiguration()
+            //    .WriteTo.File("log.txt", rollingInterval: RollingInterval.Day)
+            //    .WriteTo.Email(new EmailConnectionInfo
+            //    {
+            //        FromEmail = "from@example.com",
+            //        ToEmail = "to@example.com",
+            //        MailServer = "smtp.example.com",
+            //        NetworkCredentials = new NetworkCredential
+            //        {
+            //            UserName = "username",
+            //            Password = "password"
+            //        },
+            //        EnableSsl = true,
+            //        Port = 587,
+            //        EmailSubject = "Log event"
+            //    }, restrictedToMinimumLevel: LogEventLevel.Debug, batchPostingLimit: 1)
+            //    .CreateLogger();
         }
 
         public async Task<IActionResult> Index()
